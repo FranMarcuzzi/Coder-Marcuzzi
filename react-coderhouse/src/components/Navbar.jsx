@@ -9,10 +9,9 @@ import CartCount from './CartCount';
 
 
 const Navbar = () => {
-
   return (
     <div id='navbar'>
-            <nav className="navbar navbar-expand-lg bg-black navbar-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:"#222222", position:"fixed",top: "0" , left: "0 ",  right: "0" }}>
                 <div className="container-fluid " >
                     <a className="navbar-brand logo ms-4" href="#root"> FM <span style={{color:"#d80032" , fontSize:"30px",fontWeight:"bold"}}>.</span></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

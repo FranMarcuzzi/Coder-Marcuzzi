@@ -10,12 +10,11 @@ function CartCount(props) {
     setContador(contador + 1);
   }
 
-  const decrementar = () => {
-    setContador(contador - 1);
-  }
+
 
   return (
     <div>
+        
         <h5 className='text-center bienvenida'>Hola {props.name}
         <h5 onClick={incrementar} style={{color:"#FFFF"}}>{contador} <FontAwesomeIcon  icon={faCartArrowDown} style={{color: "#ffffff",}} /></h5>
         </h5>                         
