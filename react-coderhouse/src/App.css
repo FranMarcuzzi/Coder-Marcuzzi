@@ -11,3 +11,11 @@
 .navbar-nav li:hover{
   transform: scale(1.1) ;
 }
+
+.bienvenida{
+  transition: all 0.7s;
+}
+.bienvenida:hover{
+  color:#ffff;
+  transform: scale(1.1);
+}

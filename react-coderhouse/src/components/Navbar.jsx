@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCartArrowDown} from '@fortawesome/free-solid-svg-icons';
+import CartCount from './CartCount';
 
 
 const Navbar = () => {
@@ -21,17 +27,17 @@ const Navbar = () => {
                         <a className="nav-link" href="productos">Productos</a>
                     </li>
                     <li className="nav-item me-3">
-                        <a className="nav-link" href="faq.html">Consultas</a>
+                        <a className="nav-link" href="faq">Consultas</a>
                     </li>
                     <li className="nav-item me-3">
-                        <a className="nav-link" href="contactanos.html">Contacto</a>
+                        <a className="nav-link" href="contactanos">Contacto</a>
                     </li>
                     <li className="nav-item me-3">
-                        <a className="nav-link" href="encontranos.html">Encontranos</a>
+                        <a className="nav-link" href="encontranos">Encontranos</a>
                     </li>
                  </ul>
                  </div>
-                 <div ></div>
+                 <CartCount name="Usuario"/>              
                 </div>
             </nav>
     </div>
