@@ -1,2 +1,13 @@
-body{
+.logo{
+  transition:  0.5s;
+}
+.logo:hover{
+  transform: scale(1.3);
+}
+
+.navbar-nav li{
+  transition:  0.5s;
+}
+.navbar-nav li:hover{
+  transform: scale(1.1) ;
 }

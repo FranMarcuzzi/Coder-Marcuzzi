@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Navbar = () => {
+
   return (
     <div id='navbar'>
             <nav className="navbar navbar-expand-lg bg-black navbar-dark">
@@ -30,6 +31,7 @@ const Navbar = () => {
                     </li>
                  </ul>
                  </div>
+                 <div ></div>
                 </div>
             </nav>
     </div>
