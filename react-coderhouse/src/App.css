@@ -6,6 +6,10 @@ body,html {
   font: bold 14px/1.4 'Open Sans', arial, sans-serif;
   background: #000;
 }
+.indexContainer{
+  margin-top: 10%;
+}
+
 
         ul { 
           font-family: "averox";
@@ -304,5 +308,4 @@ margin-top: 8px;
     text-shadow: none;
   }
 }
-
 

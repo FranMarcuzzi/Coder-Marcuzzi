@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import CartCount from './CartCount';
 import ItemListContainer from './ItemListContainer';
 import ServiceCard from './ServiceCard';
+import Inicio from './inicio';
 
 const Routing = () => {
   return (
@@ -35,7 +36,7 @@ const Routing = () => {
                 </div>
             </nav>
             <Routes>
-                <Route path='/' element={<h1>Hola</h1>}></Route>
+                <Route path='/' element={<Inicio></Inicio>}></Route>
                 <Route path='/productos' element={<ItemListContainer></ItemListContainer>}></Route>
                 <Route path='/productos/:categoria/:id' element={<ServiceCard></ServiceCard>}></Route>
                 <Route path='/contacto'element={<h1>Hola!</h1>}></Route>
