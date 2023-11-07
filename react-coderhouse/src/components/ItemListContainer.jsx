@@ -1,54 +1,83 @@
 import React from 'react';
 import ServiceCard from './ServiceCard';
+import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
-const services = [
-  {
-    title: 'Servicio 1',
-    description: 'Descripción del servicio 1.',
-    price: 100,
-    color: "#fabfb7",
-    
-  },
-  {
-    title: 'Servicio 2',
-    description: 'Descripción del servicio 1.',
-    price: 150,
-    color:"#fdf9c4"
-  },
-  {
-    title: 'Servicio 3',
-    description: 'Descripción del servicio 1.',
-    price: 200,
-    color:"#ffda9e"
-  },
-  {
-    title: 'Servicio 4',
-    description: 'Descripción del servicio 1.',
-    price: 200,
-    color:"#c5c6c8"
-  },
-  {
-    title: 'Servicio 5',
-    description: 'Descripción del servicio 1.',
-    price: 200,
-    color:"#b2e2f2"
-  },
-  {
-    title: 'Servicio 6',
-    description: 'Descripción del servicio 1.',
-    price: 200,
-    color:"#b0c2f2"
-  },
-
-  
-];
 
 const ItemListContainer = () => {
+  const [subcategoriaSeleccionada, setSubcategoriaSeleccionada] = useState(null);
+
+
+const productos = [
+  {
+    title: 'ADIDAS YEEZY 350',
+    description: '',
+    price: 300,
+    color: "#fabfb7",
+    img: "../../image/pd1.png",
+    categoria: "zapatillas"
+  },
+  {
+    title: 'ADIDAS RETRO 120',
+    description: '',
+    price: 150,
+    color:"#fdf9c4",
+    img: "../../image/pd4.png",
+    categoria:"remeras"
+
+  },
+  {
+    title: 'ADIDAS YEEZY 350',
+    description: '',
+    price: 300,
+    color: "#fabfb7",
+    img: "../../image/pd1.png",
+    categoria: "remeras"
+  },
+  {
+    title: 'ADIDAS RETRO 120',
+    description: '',
+    price: 150,
+    color:"#fdf9c4",
+    img: "../../image/pd4.png",
+    categoria:"zapatillas"
+
+  },
+  {
+    title: 'ADIDAS YEEZY 350',
+    description: '',
+    price: 300,
+    color: "#fabfb7",
+    img: "../../image/pd1.png",
+    categoria: "remeras"
+  },
+  {
+    title: 'ADIDAS RETRO 120',
+    description: '',
+    price: 150,
+    color:"#fdf9c4",
+    img: "../../image/pd4.png",
+    categoria:"zapatillas"
+
+  },
+
+ 
+];
+
+
+const productosFiltrados = subcategoriaSeleccionada
+? productos.filter(producto => producto.categoria === subcategoriaSeleccionada)
+: productos;
   return (
     <div className='text-center' style={{marginTop:"30px"}}>
-      <h2 style={{color:"#ffffff",fontSize:"5rem", fontFamily: 'Fjalla One', textShadow: "-7px 3px 0 #d80032",letterSpacing: "0.07em",marginTop:"5rem"}}>Nuestros Servicios</h2>
+      <h2 className="neon-text"style={{color:"#ffffff",fontSize:"6rem", fontFamily:"averox", letterSpacing: "0.5em",marginTop:"7rem",marginBottom:"4rem"}}>productos</h2>
+      <ul className='filtro'>
+        <li onClick={() => setSubcategoriaSeleccionada('remeras')}>Remeras</li>
+        <li onClick={() => setSubcategoriaSeleccionada('zapatillas')}>Zapatillas</li>
+        <li onClick={() => setSubcategoriaSeleccionada(null)}>Mostrar Todos</li>
+      </ul>
       <div className="service-list" style={{display:"flex",flexWrap:"wrap", justifyContent:"center", alignItems:"center", color:"#ffff"}}>
-        {services.map((service, index) => (
+        {productosFiltrados.map((service, index) => (
           <ServiceCard  o key={index} {...service} />
         ))}
       </div>
