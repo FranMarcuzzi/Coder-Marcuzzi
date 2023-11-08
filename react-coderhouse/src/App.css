@@ -309,3 +309,45 @@ margin-top: 8px;
   }
 }
 
+.formulario input{
+  background-color: #000000;
+}
+.formulario input::placeholder{
+  color: #F5F5F5;
+}
+.formulario textarea{
+  background-color: #000000;
+}
+.formulario textarea::placeholder{
+  color: #F5F5F5;
+}
+
+.formulario input:hover{
+  background-color: #F5F5F5;
+}
+.formulario textarea:hover{
+  background-color: #F5F5F5;
+}
+.formulario input:hover::placeholder{
+  color: #000000;
+}
+.formulario textarea:hover::placeholder{
+  color: #000000;
+}
+.terminal {
+  background-color: black;
+  color: limegreen;
+  font-family: averox;
+  padding: 10px;
+  min-height: 200px;
+  font-size: 30px;
+  overflow-y: auto;
+}
+
+.text {
+  white-space: pre;
+}
+
+.green {
+  color: #d80032;
+}

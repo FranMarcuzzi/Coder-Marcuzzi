@@ -4,7 +4,7 @@ import Carrussel from './Carrussel'
 const Inicio = () => {
   return (
     <div className='indexContainer'>
-      <Carrussel></Carrussel>
+      <Carrussel slide1={"../image/slide1.jpg"} slide2={"../image/slide2.jpeg"}></Carrussel>
     </div>
   )
 }

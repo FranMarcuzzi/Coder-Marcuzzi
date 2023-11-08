@@ -2,10 +2,10 @@ import React from 'react';
 import CartCount from './CartCount';
 import { useParams } from 'react-router-dom';
 
-const ServiceCard = ({ title,categoria, description, price, img }) => {
+const ServiceCard = ({ title,id,categoria, description, price, img }) => {
 
   return (
-    <div categoria={categoria} className="cardNew" style={{margin:"3%"}}>
+    <div categoria={categoria} id={id}className="cardNew" style={{margin:"3%"}}>
     <div className="images">
       <img src={img} style={{marginLeft:"10%"}} />
     </div>

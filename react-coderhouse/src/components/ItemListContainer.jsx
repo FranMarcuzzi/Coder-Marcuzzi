@@ -11,6 +11,7 @@ const ItemListContainer = () => {
 const productos = [
   {
     title: 'ADIDAS YEEZY 350',
+    id : 1,
     description: '',
     price: 300,
     color: "#fabfb7",
@@ -19,6 +20,7 @@ const productos = [
   },
   {
     title: 'ADIDAS RETRO 120',
+    id : 2,
     description: '',
     price: 150,
     color:"#fdf9c4",
@@ -28,6 +30,7 @@ const productos = [
   },
   {
     title: 'ADIDAS YEEZY 350',
+    id : 3,
     description: '',
     price: 300,
     color: "#fabfb7",
@@ -36,6 +39,7 @@ const productos = [
   },
   {
     title: 'ADIDAS RETRO 120',
+    id : 4,
     description: '',
     price: 150,
     color:"#fdf9c4",
@@ -45,6 +49,7 @@ const productos = [
   },
   {
     title: 'ADIDAS YEEZY 350',
+    id : 5,
     description: '',
     price: 300,
     color: "#fabfb7",
@@ -53,6 +58,7 @@ const productos = [
   },
   {
     title: 'ADIDAS RETRO 120',
+    id : 6,
     description: '',
     price: 150,
     color:"#fdf9c4",
